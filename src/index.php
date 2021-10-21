@@ -81,7 +81,7 @@
                             echo '<td>'.$row["bd_reg_date"].'</td>';
                             echo '<td>'.$row["bd_phno"].'</td>';
                             echo '<td><a href="" ><i class="bi bi-emoji-heart-eyes"></i>Sửa</a></td>';
-                            echo '<td><a href="" ><i class="bi bi-trash-fill"></i>Xóa</a></td>';
+                            echo '<td><a href="xoa.php?id='.$row["bd_id"].'" ><i class="bi bi-trash-fill"></i>Xóa</a></td>';
                         
 
 

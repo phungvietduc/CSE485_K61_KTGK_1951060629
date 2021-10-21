@@ -21,19 +21,4 @@ if(isset($_POST['btthem']))
     // header("Location:index.php");
     mysqli_close($conn);
 }
-elseif(isset($_POST['btxoa']))
-{
-    $id=$_POST['id'];
-    include('connect.php');
-    $sql = "DELETE FROM blood_donor WHERE bd_id='$id'";
-
-if (mysqli_query($conn, $sql)) {
-  echo "Record deleted successfully";
-} else {
-  echo "Error deleting record: " . mysqli_error($conn);
-}
-header("Location:index.php");
-mysqli_close($conn);
-
-}
 ?>
