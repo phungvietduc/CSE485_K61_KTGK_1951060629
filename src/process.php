@@ -18,7 +18,7 @@ if(isset($_POST['btthem']))
     else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
-    // header("Location:index.php");
+    header("Location:index.php");
     mysqli_close($conn);
 }
 ?>
